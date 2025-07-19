@@ -15,3 +15,7 @@
 - PyTorch (CUDA версия)
 - Библиотеки:
  pip install diffusers transformers accelerate safetensors xformers
+
+## ЛУЧШЕ ИСПОЛЬЗУЙТЕ GOOGLE COLAB
+## СКОПИРУЙТЕ СОДЕРЖИМОЕ ФАЙЛА С КОДОМ И ВСТАВЬТЕ В GOOGLE COLAB notebook, А ВЕСА ЗАГРУЗИТЕ НА СНАЧАЛА НА GOOGLE ДИСК В КОРНЕВУЮ ПАПКУ, И ТОГДА ВСЕ БУДЕТ РАБОТАТЬ 
+## ВЫБЕРИТЕ СТРЕДУ С ГПУ GPU (Т4-БЕСПЛАТНАЯ)
