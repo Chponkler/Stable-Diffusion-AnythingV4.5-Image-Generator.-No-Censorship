@@ -35,10 +35,10 @@ pipe = pipe.to("cuda")
 # !pip install xformers  # Установите, если нужно
 #pipe.enable_xformers_memory_efficient_attention()
 
-# Negative prompt (как в вашем коде)
+# Negative prompt 
 negative_prompt = 'blurry, deformed, ugly, mutated hands, extra limbs, low quality, watermark, text, censored, poorly drawn face, bad anatomy, low resolution'
 
-# Prompt (пустой, как в вашем коде; можно изменить)
+# Prompt 
 prompt = "playful anime girl, high resolution, masterpiece, 4k, vibrant sunlight"
 
 # Генерация изображения
