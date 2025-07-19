@@ -11,13 +11,23 @@ from google.colab import drive
 # Путь к вашему файлу на Google Drive 
 local_path = "/content/drive/MyDrive/AnythingV4.5VAE.safetensors"
 
-# Загрузка модели из локального .safetensors файла
-pipe = StableDiffusionPipeline.from_single_file(
-    local_path,
-    torch_dtype=torch.float32,  # float16 Half-precision для ускорения и экономии памяти
-    safety_checker=None  # Отключаем цензуру
-)
+# Загрузка модели из локального .safetensors файла , файл весов оказался слишком большим для гитхаба, так что лучше используйте репозиторий и можете оттуда скачать файл весов
 
+# Loading the model from the local .safetensors file, the weights file turned out to be too large for the github, so it's better to use the repository and you can download the weights file from there
+
+
+# pipe = StableDiffusionPipeline.from_single_file(
+#     local_path,
+#     torch_dtype=torch.float32,  # float16 Half-precision для ускорения и экономии памяти
+#     safety_checker=None  # Отключаем цензуру
+# )
+
+repo_id = "Yntec/AnythingV4.5.6.7.8"  #  repo; если не то, замените на другой (поиск на huggingface.co)
+pipe = DiffusionPipeline.from_pretrained(
+    repo_id,
+    torch_dtype=torch.float32,  # float16 Half-precision для ускорения и экономии памяти
+    safety_checker=None  # Отключаем цензуру 
+)
 # Переносим модель на GPU (ОБЯЗАТЕЛЬНО!)
 pipe = pipe.to("cuda")
 
