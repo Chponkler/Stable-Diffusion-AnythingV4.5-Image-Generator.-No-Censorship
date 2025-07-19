@@ -21,6 +21,11 @@ A project for generating anime-style images using the AnythingV4.5 model via the
 ## CHOOSE A THREAD WITH GPU GPU (T4 IS FREE)
 
 
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/8be6cfbd-e1c6-41cd-81c1-7cd970840db8" />
+
+
+
 Проект для генерации изображений в аниме-стиле с использованием модели AnythingV4.5 через Stable Diffusion Pipeline. Позволяет создавать высококачественные изображения (768x768) с тонким контролем через промпты.
 
 ## 🔥 Особенности
